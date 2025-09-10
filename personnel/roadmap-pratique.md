@@ -8,13 +8,14 @@ status: TODO / WIP / DONE
 
 | activité   | stat | act,fun | where | take... | dist.,union | rev. | order | select | group | join | zip,conc... | range... | aggr. | sum... | ToList... | Rec. | Imm. |
 |------------|:----:|:-------:|-------|---------|-------------|------|-------|--------|-------|------|-------------|----------|-------|--------|-----------|------|------|
-| marché     | TODO |         | #1    |         |             |      |       |        |       |      |             |          |       |        |           |      |      |
+| marché     | DONE |         | #1    |         |             |      |       |        |       |      |             |          |       |        |           |      |      |
 | ncdu       | TODO |         | #1    |         |             |      |       |        |       |      |             |          |       |        | x         |      |      |
 | words      | TODO | #2      | x     | #2      |             | #2   | #2    | x      | x     | x    |             |          |       |        | x         |      |      |
-| cinema     | TODO | #2      | x     | x       |             |      |       | x      |       |      |             |          |       |        | x         |      |      |
+| cinema     | DONE | #2      | x     | x       |             |      |       | x      |       |      |             |          |       |        | x         |      |      |
 | hardware   | TODO | #2      | x     |         |             |      | #2    |        |       |      |             |          |       |        | x         |      |      |
-| marketIsB  | TODO | x       | x     |         |             |      |       | #3     |       |      |             |          | #3    | #3     | x         |      |      |
-| rando      | TODO |         |       |         |             |      |       | #3     |       |      |             |          | #3    | #3     | x         |      |      |
+| mib-map    | WIP  | x       | x     |         |             |      |       | #3     |       |      |             |          |       |        | x         |      |      |
+| rando      | TODO |         |       |         |             |      |       | #3     |       |      |             |          |       |        | x         |      |      |
+| mib-reduce | TODO |         |       |         |             |      |       |        |       |      |             |          | #4    | #4     |           |      |      |
 | swapi #4   | TODO | x       | x     | x       | x           | x    | x     | x      | x     | x    |             | x        | x     | x      | x         |      |      |
 | randoPure  | TODO | x       | x     |         |             |      |       |        |       |      | #5          |          | x     | x      | x         |      |      |
 | immutable  | TODO |         |       |         |             |      |       |        |       |      |             |          |       |        |           |      | #5   |
