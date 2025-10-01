@@ -110,7 +110,7 @@ namespace diffit3
             ;
 
             // TODO: 06 Créer et remplir une liste de LinesComparison à partir de linesA et linesB
-            //List<LinesComparison> comparisons = new();
+            List<LinesComparison> comparisons = new();
 
             // TODO: 07 Sélectionner les lignes qui ont des différences
             //var diffLines = new Liste<LinesComparison>();
@@ -140,7 +140,7 @@ namespace diffit3
             //saisi par l’utilisateur (clé)
             // Le contenu chiffré est enregistré sur le disque dans le fichier "cipheredA.txt"
             // Le pendant de ReadAllLines est WriteAllLines
-            /*            Console.Write("\n\nSPECIAL FEATURE: Clé de chiffrement [1-25]: ");
+                        Console.Write("\n\nSPECIAL FEATURE: Clé de chiffrement [1-25]: ");
                         byte key = Convert.ToByte(Console.ReadLine());
                     }
 
@@ -158,7 +158,7 @@ namespace diffit3
                             get => Number + 1;
                         }
 
-                        public int LengthVariation { get => Math.Abs(ContentA.Length - ContentB.Length); } */
+                        public int LengthVariation { get => Math.Abs(ContentA.Length - ContentB.Length); }
         }
     }
 }
