@@ -26,10 +26,10 @@ if (!filesAreValid)
 
 /// CHARGEMENT DES DONNÉES
 // TODO: 01 Charger le contenu texte du fichier A (indice: File.ReadAllLines...)
-string[] linesA = { "..." };
+string[] linesA = File.ReadAllLines("C:\\Users\\po51oro\\Documents\\GitHub\\323-Programmation_fonctionnelle\\personnel\\diffit\\v1.txt");
 
 // TODO: 02 Charger le contenu texte du fichier B (indice: File.ReadAllLines...)
-string[] linesB = { "..." };
+string[] linesB = File.ReadAllLines("C:\\Users\\po51oro\\Documents\\GitHub\\323-Programmation_fonctionnelle\\personnel\\diffit\\v1.txt");
 
 // TODO: 03 Vérifier que les fichier ont le même nombre de lignes
 if (true)
