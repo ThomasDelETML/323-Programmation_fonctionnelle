@@ -85,6 +85,29 @@ namespace diffit3
             bool ignoreCase = Console.ReadLine() == "o";
 
             // TODO:  05 Appliquer le nettoyage selon la demande utilisateur
+            Func<string, string> clean = text =>
+            {
+                if (ignoreSpaces) text = cleanSpaces(text);
+                if (ignoreTabs) text = cleanTabs(text);
+                if (ignoreCase) text = enforceCase(text);
+
+                return text;
+            };
+
+            string[] cleanedA = linesA.Select(clean).ToArray(); //Pour test
+            string[] cleanedB = linesB.Select(clean).ToArray();
+
+            foreach (string line in cleanedA)
+            {
+                Console.WriteLine(line);
+            }
+            ;
+
+            foreach (string line in cleanedB)
+            {
+                Console.WriteLine(line);
+            }
+            ;
 
             // TODO: 06 Créer et remplir une liste de LinesComparison à partir de linesA et linesB
             //List<LinesComparison> comparisons = new();
