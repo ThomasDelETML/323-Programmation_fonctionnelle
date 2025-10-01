@@ -47,7 +47,7 @@ namespace diffit3
             ;
 
             // TODO: 02 Charger le contenu texte du fichier B (indice: File.ReadAllLines...)
-            string[] linesB = File.ReadAllLines("C:\\Users\\po51oro\\Documents\\GitHub\\323-Programmation_fonctionnelle\\personnel\\diffit\\v1.txt");
+            string[] linesB = File.ReadAllLines("C:\\Users\\po51oro\\Documents\\GitHub\\323-Programmation_fonctionnelle\\personnel\\diffit\\v2.txt");
             foreach (string line in linesA)
             {
                 Console.WriteLine(line);
@@ -55,7 +55,8 @@ namespace diffit3
             ;
 
             // TODO: 03 Vérifier que les fichier ont le même nombre de lignes
-            if (true)
+            bool FilesAreEqual = (linesA.Length == linesB.Length);
+            if (!FilesAreEqual)
             {
                 Console.WriteLine("Erreur: les fichiers n'ont pas le même nombre de ligne");
                 Environment.Exit(-2);
