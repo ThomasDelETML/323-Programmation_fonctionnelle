@@ -68,9 +68,9 @@ namespace diffit3
             // Une fonction de nettoyage reçoit un texte (une ligne de fichier) et renvoie cette même ligne adaptée
             // Il existe la fonction Replace sur les string...
             // Le caractère tabulation s’écrit \t
-            Func<string, string> cleanSpaces = text => text;
-            Func<string, string> cleanTabs = text => text;
-            Func<string, string> enforceCase = text => text;
+            Func<string, string> cleanSpaces = text => text.Replace(" ", "");
+            Func<string, string> cleanTabs = text => text.Replace("\t", "");
+            Func<string, string> enforceCase = text => text.ToLower();
 
             /// OPTIONS DE NETTOYAGE
             Console.WriteLine("Choisir les options:");
@@ -86,9 +86,8 @@ namespace diffit3
 
             // TODO:  05 Appliquer le nettoyage selon la demande utilisateur
 
-
             // TODO: 06 Créer et remplir une liste de LinesComparison à partir de linesA et linesB
-            List<LinesComparison> comparisons = new();
+            //List<LinesComparison> comparisons = new();
 
             // TODO: 07 Sélectionner les lignes qui ont des différences
             //var diffLines = new Liste<LinesComparison>();
@@ -101,7 +100,7 @@ namespace diffit3
             // Ainsi "12345".Zip("ABCDE", (a, b) => $"{a}{b}").ToList().ForEach(Console.Write);//1A2B3C4D5E
             // ATTENTION: zip ne prend que le nombre d’éléments minimum commun entre 2 listes...
             // Ceci implique une correction: en plus du nombre de différences, il faut ajouter la différence du nombre de caractères entre les deux...
-            Func<LinesComparison, int> countVariations = _ => -1;
+            //Func<LinesComparison, int> countVariations = _ => -1;
 
             // TODO: 10 Afficher pour chaque ligne différente, le nombre de variations
 
@@ -118,25 +117,25 @@ namespace diffit3
             //saisi par l’utilisateur (clé)
             // Le contenu chiffré est enregistré sur le disque dans le fichier "cipheredA.txt"
             // Le pendant de ReadAllLines est WriteAllLines
-            Console.Write("\n\nSPECIAL FEATURE: Clé de chiffrement [1-25]: ");
-            byte key = Convert.ToByte(Console.ReadLine());
-        }
+            /*            Console.Write("\n\nSPECIAL FEATURE: Clé de chiffrement [1-25]: ");
+                        byte key = Convert.ToByte(Console.ReadLine());
+                    }
 
-public class LinesComparison
-        {
-            public int Number { get; set; }
-            public string ContentA { get; set; } = "";
-            public string ContentB { get; set; } = "";
+            public class LinesComparison
+                    {
+                        public int Number { get; set; }
+                        public string ContentA { get; set; } = "";
+                        public string ContentB { get; set; } = "";
 
-            /// <summary>
-            /// Ajuste le numéro de ligne...
-            /// </summary>
-            public int NumberHuman
-            {
-                get => Number + 1;
-            }
+                        /// <summary>
+                        /// Ajuste le numéro de ligne...
+                        /// </summary>
+                        public int NumberHuman
+                        {
+                            get => Number + 1;
+                        }
 
-            public int LengthVariation { get => Math.Abs(ContentA.Length - ContentB.Length); }
+                        public int LengthVariation { get => Math.Abs(ContentA.Length - ContentB.Length); } */
         }
     }
 }
